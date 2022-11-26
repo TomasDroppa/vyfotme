@@ -57,6 +57,8 @@ $route['prvni-stranka'] = 'Main/page1';
 $route['druha-stranka'] = 'Main/page2';
 //$route['druha-stranka/book.php'] = 'Main/book';
 $route['treti-stranka'] = 'Main/page3';
-$route['ctvrta-stranka'] = 'Main/page4';
+//$route['ctvrta-stranka'] = 'Main/page4';
+$route['gallery'] = 'Gallery/index';
+
 $route['registrace'] = 'Login/registerUser';
 $route['prihlaseni'] = 'Login/loginUser';

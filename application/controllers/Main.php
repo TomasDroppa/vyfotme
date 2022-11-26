@@ -34,7 +34,7 @@ class Main extends CI_Controller {
         $data["title"] = "Úvodní stránka";
         $data["main"] = "page2";
         $this->layout->generate($data);
-   */ }
+    }*/
     
     function page3() {
         $data["title"] = "Úvodní stránka";

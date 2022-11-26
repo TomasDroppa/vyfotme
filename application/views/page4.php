@@ -6,4 +6,3 @@
  * and open the template in the editor.
  */
 
-echo heading('Stránka 4',1);
