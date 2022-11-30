@@ -85,5 +85,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
 
+<div class="row content-inner-4">
+	<div class="banner-map col-md-12">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d653.4873902835719!2d17.468177081591783!3d49.06859342879028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713144708bb1a4b%3A0x71d96cdc2a4b4016!2zxaB0ZWbDoW5pa292YSA0NTQsIDY4NiAwMSBVaGVyc2vDqSBIcmFkacWhdMSb!5e0!3m2!1scs!2scz!4v1669833732027!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d653.4850790795133!2d17.46812880182952!3d49.068769154753724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471314470f10d8d3%3A0x9e6d2f10184cf7b8!2zxaB0ZWbDoW5pa292YSA0NjksIDY4NiAwMSBVaGVyc2vDqSBIcmFkacWhdMSb!5e0!3m2!1scs!2scz!4v1669833954953!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+</div>
+
 </body>
 </html>
