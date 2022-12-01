@@ -30,11 +30,11 @@ class Main extends CI_Controller {
         $this->layout->generate($data);
     }
 
-   /* function book() {
+    function book() {
         $data["title"] = "Úvodní stránka";
-        $data["main"] = "page2";
+        $data["main"] = "book";
         $this->layout->generate($data);
-    }*/
+    }
     
     function page3() {
         $data["title"] = "Úvodní stránka";
