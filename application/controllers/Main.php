@@ -9,7 +9,7 @@
 /**
  * Description of Main
  *
- * @author zdrh
+ * 
  */
 class Main extends CI_Controller {
 

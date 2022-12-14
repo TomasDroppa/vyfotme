@@ -21,25 +21,12 @@
                                 <a class="nav-link" href="ctvrta-stranka">Link 4</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="gallery">Link 5</a>
+                                <a class="nav-link" href="gallery">Galerie</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Dropdown 1</a>
-                                    <a class="dropdown-item" href="#">Dropdown 2</a>
-                                    <a class="dropdown-item" href="#">Dropdown 3</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Dropdown 4</a>
-                                </div>
-                            </li>
+                            
                         </ul>
                         <ul class="navbar-nav ml-auto">
-                             <li class="nav-item">
-                                <a class="nav-link" href="registrace"><i class="fas fa-user-plus"></i> Registrace
-                                    
-                                </a>
-                            </li>
+                             
                             <li class="nav-item">
                                 
                                 <a class="nav-link" href="prihlaseni"><i class="fas fa-sign-in-alt"></i> Přihlášení</a>

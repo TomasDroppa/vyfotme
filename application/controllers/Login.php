@@ -9,7 +9,7 @@
 /**
  * Description of Login
  *
- * @author zdrh
+ * 
  */
 class Login extends CI_Controller {
 
