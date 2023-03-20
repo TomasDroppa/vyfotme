@@ -1,5 +1,5 @@
 <div class="container">
-	<h2>Gallery Images Management</h2>
+	<h2>Administrace galerie</h2>
 	
 	<!-- Display status message -->
 	<?php if(!empty($success_msg)){ ?>
@@ -17,7 +17,7 @@
             <h5><?php echo $title; ?></h5>
             <!-- Add link -->
             <div class="float-right">
-                <a href="<?php echo base_url('manage_gallery/add'); ?>" class="btn btn-success"><i class="plus"></i> Upload Image</a>
+                <a href="<?php echo base_url('manage_gallery/add'); ?>" class="btn btn-success"><i class="plus"></i>Nahrát fotky</a>
             </div>
         </div>
         
@@ -25,12 +25,12 @@
 		<table class="table table-striped table-bordered">
 			<thead class="thead-dark">
 				<tr>
-					<th width="5%">#</th>
+					<th width="5%">Číslo</th>
 					<th width="10%"></th>
-					<th width="40%">Title</th>
-					<th width="19%">Created</th>
+					<th width="35%">Název</th>
+					<th width="19%">Vytvořeno</th>
 					<th width="8%">Status</th>
-					<th width="18%">Action</th>
+					<th width="23%">Action</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -47,13 +47,13 @@
 					<td><?php echo $row['created']; ?></td>
 					<td><a href="<?php echo $statusLink; ?>" title="<?php echo $statusTooltip; ?>"><span class="badge <?php echo ($row['status'] == 1)?'badge-success':'badge-danger'; ?>"><?php echo ($row['status'] == 1)?'Active':'Inactive'; ?></span></a></td>
 					<td>
-						<a href="<?php echo base_url('manage_gallery/view/'.$row['id']); ?>" class="btn btn-primary">view</a>
-						<a href="<?php echo base_url('manage_gallery/edit/'.$row['id']); ?>" class="btn btn-warning">edit</a>
-						<a href="<?php echo base_url('manage_gallery/delete/'.$row['id']); ?>" class="btn btn-danger" onclick="return confirm('Are you sure to delete data?')?true:false;">delete</a>
+						<a href="<?php echo base_url('manage_gallery/view/'.$row['id']); ?>" class="btn btn-primary">Zobrazit</a>
+						<a href="<?php echo base_url('manage_gallery/edit/'.$row['id']); ?>" class="btn btn-warning">Upravit</a>
+						<a href="<?php echo base_url('manage_gallery/delete/'.$row['id']); ?>" class="btn btn-danger" onclick="return confirm('Opravdu chceš fotku smazat?')?true:false;">Smazat</a>
 					</td>
 				</tr>
 				<?php } }else{ ?>
-				<tr><td colspan="6">No image(s) found...</td></tr>
+				<tr><td colspan="6">Nenalezeny žádné fotky...</td></tr>
 				<?php } ?>
 			</tbody>
 		</table>

@@ -8,6 +8,6 @@
 				</div>
 			<?php } ?>
 		</div>
-		<a href="<?php echo base_url('manage_gallery'); ?>" class="btn btn-primary">Back to List</a>
+		<a href="<?php echo base_url('manage_gallery'); ?>" class="btn btn-primary">Zpět do galerie</a>
 	</div>
 </div>

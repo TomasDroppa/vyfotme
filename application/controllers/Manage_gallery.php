@@ -32,7 +32,7 @@ class Manage_gallery extends CI_Controller {
         }
 
         $data['gallery'] = $this->image->getRows();
-        $data['title'] = 'Images Archive';
+        $data['title'] = 'Galerie';
         
         //načte potřebné views
         $this->load->view('templates/header', $data);
@@ -114,7 +114,7 @@ class Manage_gallery extends CI_Controller {
         }
         
         $data['image'] = $imgData;
-        $data['title'] = 'Upload Image';
+        $data['title'] = 'Nahrání fotky';
         $data['action'] = 'Upload';
         
         // Načte view pro přidání fotky
@@ -188,7 +188,7 @@ class Manage_gallery extends CI_Controller {
 
         
         $data['image'] = $imgData;
-        $data['title'] = 'Update Image';
+        $data['title'] = 'Upravit fotku';
         $data['action'] = 'Edit';
         
         // Load the edit page view
