@@ -17,11 +17,34 @@
   
   </head>
   <body>
-    <h1 id="main_title">Ceník</h1>
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">	
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="http://localhost/vyfotme/gallery">Hlavní stránka</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="http://localhost/vyfotme/bookingsystem/admin/">Administrace rezervací</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="http://localhost/vyfotme/manage_gallery">Administrace galerie</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="http://localhost/vyfotme/manage_cenik">Administrace ceníku</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
 
     <div class="container">
         <div class="box1">
-            <h2>Služby</h2>
+            <h2>Ceník</h2>
             <!---bootstrap modal-->
             <!---<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Přidej službu</button>---->
             <div class= "text-right">

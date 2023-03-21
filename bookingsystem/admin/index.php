@@ -31,9 +31,23 @@ session_start();
       <div class="main_container">
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
+            
             <div class="navbar nav_title" style="border: 0;">
-              <a href="#" class="site_title"> <span>Administrace</span></a>
+              <a href="http://localhost/vyfotme/gallery" class="site_title"> <span>Hlavní stránka</span></a>
             </div>
+            
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="http://localhost/vyfotme/bookingsystem/rezervace_terminu.php" class="site_title"> <span>Rezervace termínů</span></a>
+            </div>
+
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="http://localhost/vyfotme/manage_gallery" class="site_title"> <span>Administrace galerie</span></a>
+            </div>
+
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="http://localhost/vyfotme/manage_cenik" class="site_title"> <span>Administrace ceníku</span></a>
+            </div>
+
 
             <div class="clearfix"></div>
 
@@ -98,7 +112,7 @@ session_start();
               
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Seznam rezervací</h2>
+                    <h4>Seznam rezervací</h4>
                     
                     <div class="clearfix"></div>
                   </div>

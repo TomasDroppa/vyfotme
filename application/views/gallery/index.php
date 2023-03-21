@@ -32,7 +32,7 @@
 							<li><a href="#services">Koho fotím?</a></li>
 							<li><a href="#works">Galerie</a></li>
 							<li><a href="http://localhost/vyfotme/zobraz_cenik">Ceník</a></li>
-							<li><a href="http://localhost/vyfotme/bookingsystem/rezervace_terminu.php">rezervace termínů</a></li>
+							<li><a href="http://localhost/vyfotme/bookingsystem/rezervace_terminu.php">Rezervace termínů</a></li>
 							<li><a href="#contact">Kontakty</a></li>
 						</ul>
 					</nav>

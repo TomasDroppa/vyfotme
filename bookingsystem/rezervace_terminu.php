@@ -27,7 +27,7 @@ function build_calendar($month, $year) {
    
     $calendar = "<table class='table table-bordered'>";
     $calendar .= "<center><h2>$monthName $year</h2>";
-    $calendar.= "<a class='btn btn-xs btn-success' href='?month=".date('m', mktime(0, 0, 0, $month-1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month-1, 1, $year))."'>Předešlý měsíc</a> ";
+    $calendar.= "<a class='btn btn-xs btn-success' href='?month=".date('m', mktime(0, 0, 0, $month-1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month-1, 1, $year))."'>Minulý měsíc</a> ";
     $calendar.= " <a class='btn btn-xs btn-danger' href='?month=".date('m')."&year=".date('Y')."'>Aktuální měsíc</a> ";
     $calendar.= "<a class='btn btn-xs btn-primary' href='?month=".date('m', mktime(0, 0, 0, $month+1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month+1, 1, $year))."'>Další měsíc</a></center><br>";
     
@@ -71,7 +71,7 @@ function build_calendar($month, $year) {
              $calendar.="<td class='$today'><h4>$currentDay</h4> <button class='btn btn-danger btn-xs'> <span class='glyphicon glyphicon-lock
              '></span> Již zarezervováno</button>";
          }else{
-             $calendar.="<td class='$today'><h4>$currentDay</h4> <a href='book.php?date=".$date."' class='btn btn-success btn-xs'> <span class='glyphicon glyphicon-ok'></span> Zarezervujte nyní</a>";
+             $calendar.="<td class='$today'><h4>$currentDay</h4> <a href='book.php?date=".$date."' class='btn btn-success btn-xs'> <span class='glyphicon glyphicon-ok'></span> Zarezervovat</a>";
          }                                                              //book.php důležité
             
           $calendar .="</td>";
@@ -96,11 +96,16 @@ function build_calendar($month, $year) {
 ?>
 
 
-<html>
+<html lang="en">
   <head>
+    <title>Rezervace</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <title>Title</title>
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   
+
     <style>
     @media only screen and (max-width: 760px),
         (min-device-width: 802px) and (max-device-width: 1020px) {
@@ -199,15 +204,47 @@ function build_calendar($month, $year) {
         .today{
             background:#eee;
         }
+
+        body {
+        background-color: #f8f9fa;
+        }
+
+        .navbar-nav{
+            font-size: 25px;
+        }
+
     </style>
  </head>
   <body>
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">	
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="http://localhost/vyfotme/gallery">Hlavní stránka</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="http://localhost/vyfotme/bookingsystem/admin/">Administrace rezervací</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="http://localhost/vyfotme/manage_gallery">Administrace galerie</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="http://localhost/vyfotme/manage_cenik">Administrace ceníku</a>
+					</li>
+
+				</ul>
+			</div>
+	</nav>
+  
+  
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="alert alert-danger" style="background:#2ecc71;border:none;color:#fff">
-                    <h1>Online rezervační systém</h1>
-                    </div>
                     <?php
                         $dateComponents = getdate();
                         if(isset($_GET['month']) && isset($_GET['year'])){
