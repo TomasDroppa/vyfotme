@@ -77,7 +77,7 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',	//root
-	'password' => '',
+	'password' => '',			//doma nic, ve škole WEB-0AUH
 	'database' => 'galerie',	//název databáze
 	
 	'dbdriver' => 'mysqli',
