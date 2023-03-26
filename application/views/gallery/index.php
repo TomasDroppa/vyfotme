@@ -325,19 +325,19 @@
 							<!-- info item start -->
 							<div class="info-item">
 								<h5>Adresa</h5>
-								<p>Uherské Hradiště, Štefanikova 454</p>
+								<p><?php echo $this->config->item('adresa'); ?></p>
 							</div>
 							<!-- info item end -->
 							<!-- info item start -->
 							<div class="info-item">
 								<h5>Telefon</h5>
-								<p>548 681 348</p>
+								<p><?php echo $this->config->item('telefon'); ?></p>
 							</div>
 							<!-- info item end -->
 							<!-- info item start -->
 							<div class="info-item">
 								<h5>Email</h5>
-								<p>email@gmail.com</p>
+								<p><?php echo $this->config->item('email'); ?></p>
 							</div>
 							<!-- info item end -->
 						</div>

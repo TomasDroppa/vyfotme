@@ -1,4 +1,7 @@
+
+
 <?php
+
 if(isset($_GET['date'])){
   $date = $_GET['date'];
 }
@@ -8,21 +11,23 @@ if(isset($_POST['submit'])){
     $lname = $_POST['prijmeni'];
     $phone = $_POST['telefon'];
     $email = $_POST['email'];
-
+    
     //propojení s databází
     $conn = new mysqli('localhost', 'root', '', 'galerie');
 
     $sql ="INSERT INTO bookings_record(jmeno,prijmeni,telefon,email,datum)VALUES('$fname','$lname','$phone','$email','$date')";
     if($conn->query($sql)){
-      $message = "<div class='alert alert-success'>Booking Successfull</div>";
+       //novy kod 
+   
+       
+      //nový kod
+     
+      $message = "<div class='alert alert-success'>Úspěšně zarezervováno</div>";
     }else{
-      $message = "<div class='alert alert-danger'>Booking was not Successfull</div>";
+      $message = "<div class='alert alert-danger'>Den je již zarezervovaný</div>";
     }
 
-
 }
-
-
 
 ?>
 
@@ -42,13 +47,13 @@ if(isset($_POST['submit'])){
         <div class="row">
           <div class="col-md-12">
             <?php echo isset ($message)?$message:'';?>
-            <form action="" method="POST" autocomplete="off">
+            <form action="" method="POST" autocomplete="off">  <!--změnil jsem původní form acion=""   na form action="book.php"-->
                 <div class="form-group">
                   <label for=""> Jméno</label>
                   <input type="text" class="form-control" name="jmeno" required>
                 </div>
                 <div class="form-group">
-                  <label for=""> Příjmnení</label>
+                  <label for=""> Příjmení</label>
                   <input type="text" class="form-control" name="prijmeni" required>
                 </div>
                 <div class="form-group">
@@ -71,3 +76,6 @@ if(isset($_POST['submit'])){
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+

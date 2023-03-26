@@ -25,6 +25,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['base_url'] = 'http://localhost/vyfotme/';
 
+$config['adresa'] = 'Uherské Hradiště, Štefanikova 454';
+$config['email'] = 'Sabina.37@seznam.cz';
+$config['telefon'] = '548 681 348';
+
 /*
 |--------------------------------------------------------------------------
 | Index File
