@@ -17,11 +17,7 @@ if(isset($_POST['submit'])){
 
     $sql ="INSERT INTO bookings_record(jmeno,prijmeni,telefon,email,datum)VALUES('$fname','$lname','$phone','$email','$date')";
     if($conn->query($sql)){
-       //novy kod 
-   
-       
-      //nový kod
-     
+  
       $message = "<div class='alert alert-success'>Úspěšně zarezervováno</div>";
     }else{
       $message = "<div class='alert alert-danger'>Den je již zarezervovaný</div>";
@@ -39,7 +35,7 @@ if(isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Rezervační systém</title> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">  <!--css/style.-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">  
 </head>
   <body>
       <div class="container">
@@ -47,7 +43,7 @@ if(isset($_POST['submit'])){
         <div class="row">
           <div class="col-md-12">
             <?php echo isset ($message)?$message:'';?>
-            <form action="" method="POST" autocomplete="off">  <!--změnil jsem původní form acion=""   na form action="book.php"-->
+            <form action="" method="POST" autocomplete="off">  
                 <div class="form-group">
                   <label for=""> Jméno</label>
                   <input type="text" class="form-control" name="jmeno" required>

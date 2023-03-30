@@ -31,9 +31,9 @@
 							<li><a href="#about">O mně</a></li>
 							<li><a href="#services">Koho fotím?</a></li>
 							<li><a href="#works">Galerie</a></li>
+							<li><a href="#contact">Kontakty</a></li>
 							<li><a href="http://localhost/vyfotme/zobraz_cenik">Ceník</a></li>
 							<li><a href="http://localhost/vyfotme/bookingsystem/rezervace_terminu.php">Rezervace termínů</a></li>
-							<li><a href="#contact">Kontakty</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -50,7 +50,7 @@
 				<div class="row align-items-center">
 					<div class="home-content">
 						<h4>Sabina Běhávková</h4>
-						<h1>Photographer</h1>
+						<h1>Photography</h1>
 					</div>
 				</div>
 			</div>
@@ -77,13 +77,12 @@
 						<h1>O mně</h1>
 						</div>
 					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-						ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-						dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-					</div>
+					<p> Jmenuji se Sabina Běhávková a bydlím v Uherském Hradišti. Focení bylo odkjakživa mým koníčkem. Profesionálnímu focení jsem se začala věnovat v roce 2015.</p>
+					<br>
+					<p> K focení využívám zařízený ateliér, ale nejraději fotím venku. Zaměřuji se zejména na focení dětí, svateb, rodin a novorozenců. Má ráda i lifestyle - focení v domácím prostředí. Mám blízký vztah k dětem. Doma mám malého syna a vím, jak může být focení dětí zábavné, ale i náročné.</p>
+					</p>
+
+				</div>
 				</div>
 			</div>
 		</section>
@@ -106,7 +105,8 @@
 								<h4>Děti</h4>
 							</div>
 						</div>
-						<p>popis focení dané kategorie, možná ceník</p>
+						<br>
+						<p>Focení v exteriéru, lokaci si můžete zvolit. Dostanete 10 ks upravených, vyretušovaných fotek ve vysokém rozlišení, a také v černobílém provedení. Fotky obdržíte v elektronické podobě. Každá další upravená fotografie 150,- Kč</p>
 					</div>
 					<!-- service Item End -->
 					<!-- service Item Start -->
@@ -117,6 +117,8 @@
 								<h4>Novorozenci</h4>
 							</div>
 						</div>
+						<br>
+						<p>Focení probíhá ve studiu. 10 ks upravených, vyretušovaných fotek ve vysokém rozlišení. Rekvizity jsou v ceně (košíky, wrapy, oblečky, čelenky apod.) Každá další upravená fotografie 150,- Kč - Fotí se do 14-ti dní od narození, kdy jde miminko polohovat, hodně spí ...</p>
 					</div>
 					<!-- service Item End -->
 					<!-- service Item Start -->
@@ -124,9 +126,11 @@
 						<div class="service-item-inner">
 							<img src="assets/img/kohofoti/3.jpg" alt="service">
 							<div class="overlay">
-								<h4>Portréty</h4>
+								<h4>Miminka</h4>
 							</div>
 						</div>
+						<br>
+						<p>Focení u Vás doma (popř. na zahradě, na lodi…). Minimálně 30 ks nejlepších fotek ve vysokém rozlišení (barevné nebo černobílé). Miminko nemusí spinkat, fotí se např. u krmení, v náručí, s rodiči , sourozenci apod. Cena dopravy je 7,- Kč/1km</p>
 					</div>
 					<!-- service Item End -->
 					<!-- service Item Start -->
@@ -137,6 +141,8 @@
 								<h4>Rodina</h4>
 							</div>
 						</div>
+						<br>
+						<p>Focení v exteriéru, lokaci si můžete zvolit. Dostanete 10 ks upravených, vyretušovaných fotek ve vysokém rozlišení, a také v černobílém provedení. Fotky obdržíte v elektronické podobě. Každá další upravená fotografie 150,- Kč</p>
 					</div>
 					<!-- service Item End -->
 					<!-- service Item Start -->
@@ -147,6 +153,8 @@
 								<h4>Svatba</h4>
 							</div>
 						</div>
+						<br>
+						<p>Zachycení Vašeho svatebního dne. Focení většinou probíhá celý den. Pokud máte zájem, zarezervujte si prosím datum v Rezervaci termínů a já Vás budu v zápětí kontaktovat.</p>
 					</div>
 					<!-- service Item End -->
 					<!-- service Item Start -->
@@ -157,6 +165,8 @@
 								<h4>Těhu</h4>
 							</div>
 						</div>
+						<br>
+						<p>Focení v exteriéru, lokaci si můžete zvolit. Dostanete 10 ks upravených, vyretušovaných fotek ve vysokém rozlišení, a také v černobílém provedení. Fotky obdržíte v elektronické podobě. Každá další upravená fotografie 150,- Kč</p>
 					</div>
 					<!-- service Item End -->
 				</div>
@@ -177,7 +187,7 @@
 							<div class="work-item-inner">
 							<?php
 								if (!empty($gallery)) {
-									$row = $gallery[0]; // get the first image in the gallery
+									$row = $gallery[0]; // první fotka z galerie
 
 									
 										$uploadDir = base_url().'uploads/images/';
@@ -305,58 +315,57 @@
 		<!-- Contact Section Start -->
 		<section class="contact-section" id="contact"> <!--musí tam být id aby když se klikne např. na contact tak to sjede a contact-->
 			<div class="container">
-				<div class="row">
-					<div class="contact-img">
-						<div class="img-box">
-							<div class="section-title">
-								<h1>Kontakty</h1>
-							</div>
-						</div>
-					</div>
+				<div class="row">				
+					<div class="section-title">
+						<h1>Kontakty</h1>
+					</div>	
 				</div>
+				
 				<div class="row">
-					<div class="contact-form">
+					<div class="col-md-6">			
+						<div class="contact-info">
 						
-					</div>
-				</div>
-				<div class="row">
-					<div class="contact-info">
-						<div class="row">
 							<!-- info item start -->
 							<div class="info-item">
 								<h5>Adresa</h5>
-								<p><?php echo $this->config->item('adresa'); ?></p>
+								<p>Uherské Hradiště, Štefanikova 454</p>
 							</div>
 							<!-- info item end -->
 							<!-- info item start -->
 							<div class="info-item">
 								<h5>Telefon</h5>
-								<p><?php echo $this->config->item('telefon'); ?></p>
+								<p>548 681 348</p>
 							</div>
 							<!-- info item end -->
 							<!-- info item start -->
 							<div class="info-item">
 								<h5>Email</h5>
-								<p><?php echo $this->config->item('email'); ?></p>
+								<p>sabina.37@seznam.cz</p>
 							</div>
 							<!-- info item end -->
+						
+							<div class="social-links">
+								<a href="https://www.facebook.com/PhotographySabina" title="facebook"><img src="assets/img/icons/facebook.svg" alt="facebook"></a>
+								<a href="https://www.instagram.com/photographysabinabehavkova/" title="instagram"><img src="assets/img/icons/instagram.svg" alt="instagram"></a>
+							</div>
 						</div>
+					</div>			
+				
+
+					<div class="col-md-6" >
+						<div class="fb-container">	
+							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPhotographySabina&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=651516096350839" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+						</div>	
+					</div>	
+				</div>
+				
+					<div class="mapa">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d388.56576357434176!2d17.468417079260675!3d49.068614331864914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713144708bb1a4b%3A0x71d96cdc2a4b4016!2zxaB0ZWbDoW5pa292YSA0NTQsIDY4NiAwMSBVaGVyc2vDqSBIcmFkacWhdMSb!5e0!3m2!1scs!2scz!4v1675605038367!5m2!1scs!2scz" width="1140" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
-				</div>
-
-				<div class="row">
-					<div class="social-links">
-						<a href="https://www.facebook.com/PhotographySabina" title="facebook"><img src="assets/img/icons/facebook.svg" alt="facebook"></a>
-						<a href="https://www.instagram.com/photographysabinabehavkova/" title="instagram"><img src="assets/img/icons/instagram.svg" alt="instagram"></a>
-					</div>
-				</div>
-
-				<div class="mapa">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d388.56576357434176!2d17.468417079260675!3d49.068614331864914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713144708bb1a4b%3A0x71d96cdc2a4b4016!2zxaB0ZWbDoW5pa292YSA0NTQsIDY4NiAwMSBVaGVyc2vDqSBIcmFkacWhdMSb!5e0!3m2!1scs!2scz!4v1675605038367!5m2!1scs!2scz" width="1140" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-
 			</div>
 		</section>
+
+		
 		<!-- Contact Section End -->
 		
 			<script src="js/jquery.min.js"></script>

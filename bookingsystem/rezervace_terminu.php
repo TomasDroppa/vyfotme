@@ -17,10 +17,13 @@ function build_calendar($month, $year) {
     
     
      $daysOfWeek = array('Neděle','Pondělí','Úterý','Středa','Čtvrtek','Pátek','Sobota');
+     $englishMonths = array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');// nové
+     $czechMonths = array('Leden', 'Únor', 'Březen', 'Duben', 'Květen', 'Červen', 'Červenec', 'Srpen', 'Září', 'Říjen', 'Listopad', 'Prosinec');//nove
      $firstDayOfMonth = mktime(0,0,0,$month,1,$year);
      $numberDays = date('t',$firstDayOfMonth);
      $dateComponents = getdate($firstDayOfMonth);
-     $monthName = $dateComponents['month'];
+     //$monthName = $dateComponents['month'];
+     $monthName = $czechMonths[$dateComponents['mon'] - 1]; // nove
      $dayOfWeek = $dateComponents['wday'];
 
     $datetoday = date('Y-m-d');
@@ -33,6 +36,8 @@ function build_calendar($month, $year) {
     
    
       $calendar .= "<tr>";
+
+      $daysOfWeek = array("Pondělí","Úterý","Středa","Čtvrtek","Pátek","Sobota","Neděle");
      foreach($daysOfWeek as $day) {
           $calendar .= "<th  class='header'>$day</th>";
      } 
@@ -147,25 +152,25 @@ function build_calendar($month, $year) {
 		Label the data
 		*/
             td:nth-of-type(1):before {
-                content: "Neděle";
-            }
-            td:nth-of-type(2):before {
                 content: "Pondělí";
             }
-            td:nth-of-type(3):before {
+            td:nth-of-type(2):before {
                 content: "Úterý";
             }
-            td:nth-of-type(4):before {
+            td:nth-of-type(3):before {
                 content: "Středa";
             }
-            td:nth-of-type(5):before {
+            td:nth-of-type(4):before {
                 content: "Čtvrtek";
             }
-            td:nth-of-type(6):before {
+            td:nth-of-type(5):before {
                 content: "Pátek";
             }
-            td:nth-of-type(7):before {
+            td:nth-of-type(6):before {
                 content: "Sobota";
+            }
+            td:nth-of-type(7):before {
+                content: "Neděle";
             }
 
 
@@ -233,7 +238,7 @@ function build_calendar($month, $year) {
 					<li class="nav-item ">
 						<a class="nav-link" href="http://localhost/vyfotme/manage_gallery">Administrace galerie</a>
 					</li>
-					<li class="nav-item active">
+					<li class="nav-item ">
 						<a class="nav-link" href="http://localhost/vyfotme/manage_cenik">Administrace ceníku</a>
 					</li>
 
@@ -257,6 +262,8 @@ function build_calendar($month, $year) {
                         echo build_calendar($month, $year);
                     ?>
                 
+
+                <h5>Rezervační systém je určený jen pro rezervaci svateb. Jakmile si zarezervujete datum, budu Vás kontaktovat a domluvíme podrobnosti, které souvisí s focením.</h5>
             </div>
         </div>
     </div>

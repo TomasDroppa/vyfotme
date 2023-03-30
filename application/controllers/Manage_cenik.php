@@ -35,16 +35,16 @@ class Manage_cenik extends CI_Controller {
 
         $this->load->library('form_validation');
         
-        $this->form_validation->set_rules('sluzba', 'Sluzba', 'required');
-        $this->form_validation->set_rules('cena', 'Cena', 'required');
-        $this->form_validation->set_rules('delka_foceni', 'Delka_foceni', 'required');
+        $this->form_validation->set_rules('service', 'Service', 'required');
+        $this->form_validation->set_rules('price', 'Price', 'required');
+        $this->form_validation->set_rules('photography_length', 'Photography_length', 'required');
 
         if($this->form_validation->run() == true) {
 
             $formArray = array();
-            $formArray['sluzba'] = $this->input->post('sluzba');
-            $formArray['cena'] = $this->input->post('cena');
-            $formArray['delka_foceni'] = $this->input->post('delka_foceni');
+            $formArray['service'] = $this->input->post('service');
+            $formArray['price'] = $this->input->post('price');
+            $formArray['photography_length'] = $this->input->post('photography_length');
 
             $id = $this->Cenik_model->create($formArray);
 
@@ -59,9 +59,9 @@ class Manage_cenik extends CI_Controller {
         } else {
 
             $response['status'] = 0;
-            $response['sluzba'] = strip_tags(form_error('sluzba'));
-            $response['cena'] = strip_tags(form_error('cena'));
-            $response['delka_foceni'] = strip_tags(form_error('delka_foceni'));
+            $response['service'] = strip_tags(form_error('service'));
+            $response['price'] = strip_tags(form_error('price'));
+            $response['photography_length'] = strip_tags(form_error('photography_length'));
 
 
         }
@@ -97,17 +97,17 @@ class Manage_cenik extends CI_Controller {
 
         $this->load->library('form_validation');
         
-        $this->form_validation->set_rules('sluzba', 'Sluzba', 'required');
-        $this->form_validation->set_rules('cena', 'Cena', 'required');
-        $this->form_validation->set_rules('delka_foceni', 'Delka_foceni', 'required');
+        $this->form_validation->set_rules('service', 'Service', 'required');
+        $this->form_validation->set_rules('price', 'Price', 'required');
+        $this->form_validation->set_rules('photography_length', 'Photography_length', 'required');
 
         if($this->form_validation->run() == true) {
             //updated record
 
             $formArray = array();
-            $formArray['sluzba'] = $this->input->post('sluzba');
-            $formArray['cena'] = $this->input->post('cena');
-            $formArray['delka_foceni'] = $this->input->post('delka_foceni');
+            $formArray['service'] = $this->input->post('service');
+            $formArray['price'] = $this->input->post('price');
+            $formArray['photography_length'] = $this->input->post('photography_length');
 
             $id = $this->Cenik_model->update($id,$formArray);
             $row = $this->Cenik_model->getRow($id);
@@ -120,9 +120,9 @@ class Manage_cenik extends CI_Controller {
         } else {
 
             $response['status'] = 0;
-            $response['sluzba'] = strip_tags(form_error('sluzba'));
-            $response['cena'] = strip_tags(form_error('cena'));
-            $response['delka_foceni'] = strip_tags(form_error('delka_foceni'));
+            $response['service'] = strip_tags(form_error('service'));
+            $response['price'] = strip_tags(form_error('price'));
+            $response['photography_length'] = strip_tags(form_error('photography_length'));
 
         }
 

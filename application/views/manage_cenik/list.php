@@ -58,7 +58,7 @@
                     <th>Služba</th>
                     <th>Cena</th>
                     <th>Délka focení</th>
-                    <th>Uprvavit</th>
+                    <th>Upravit</th>
                     <th>Smazat</th>
                 </tr>
             
@@ -181,31 +181,31 @@
             success : function(response){
              
                 if(response['status'] == 0) {
-                  if(response["sluzba"] != "") {
-                    $(".sluzbaError").html(response["sluzba"]).addClass('invalid-feedback d-block'); //d-block zabarví to na červeno
-                    $("#sluzba").addClass('is-invalid');
+                  if(response["service"] != "") {
+                    $(".serviceError").html(response["service"]).addClass('invalid-feedback d-block'); //d-block zabarví to na červeno
+                    $("#service").addClass('is-invalid');
                   } else {
-                    $(".sluzbaError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
-                    $("#sluzba").removeClass('is-invalid');
+                    $(".serviceError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
+                    $("#service").removeClass('is-invalid');
                   }
                 
 
                 
-                  if(response["cena"] != "") {
-                    $(".cenaError").html(response["cena"]).addClass('invalid-feedback d-block');
-                    $("#cena").addClass('is-invalid');
+                  if(response["price"] != "") {
+                    $(".priceError").html(response["price"]).addClass('invalid-feedback d-block');
+                    $("#price").addClass('is-invalid');
                   } else {
-                    $(".cenaError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
-                    $("#cena").removeClass('is-invalid');
+                    $(".priceError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
+                    $("#price").removeClass('is-invalid');
                   }
                 
                 
-                  if(response["delka_foceni"] != "") {
-                    $(".delka_foceniError").html(response["delka_foceni"]).addClass('invalid-feedback d-block');
-                    $("#delka_foceni").addClass('is-invalid');
+                  if(response["photography_length"] != "") {
+                    $(".photography_lengthError").html(response["photography_length"]).addClass('invalid-feedback d-block');
+                    $("#photography_length").addClass('is-invalid');
                   } else {
-                    $(".delka_foceniError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
-                    $("#delka_foceni").removeClass('is-invalid');
+                    $(".photography_lengthError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
+                    $("#photography_length").removeClass('is-invalid');
                   }
                 } else {
 
@@ -217,14 +217,14 @@
                   $("#ajaxResponseModal").modal("show");
 
 
-                  $(".sluzbaError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
-                  $("#sluzba").removeClass('is-invalid');
+                  $(".serviceError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
+                  $("#service").removeClass('is-invalid');
 
-                  $(".cenaError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
-                  $("#cena").removeClass('is-invalid');
+                  $(".priceError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
+                  $("#price").removeClass('is-invalid');
 
-                  $(".delka_foceniError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
-                  $("#delka_foceni").removeClass('is-invalid');
+                  $(".photography_lengthError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
+                  $("#photography_length").removeClass('is-invalid');
                
                   $("#cenikModelList").append(response["row"]);
                
@@ -275,31 +275,31 @@
       
           if(response['status'] == 0) {
             
-            if(response["sluzba"] != "") {
-                    $(".sluzbaError").html(response["sluzba"]).addClass('invalid-feedback d-block'); //d-block zabarví to na červeno
-                    $("#sluzba").addClass('is-invalid');
+            if(response["service"] != "") {
+                    $(".serviceError").html(response["service"]).addClass('invalid-feedback d-block'); //d-block zabarví to na červeno
+                    $("#service").addClass('is-invalid');
                   } else {
-                    $(".sluzbaError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
-                    $("#sluzba").removeClass('is-invalid');
+                    $(".serviceError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
+                    $("#service").removeClass('is-invalid');
                   }
                 
 
                 
-                  if(response["cena"] != "") {
-                    $(".cenaError").html(response["cena"]).addClass('invalid-feedback d-block');
-                    $("#cena").addClass('is-invalid');
+                  if(response["price"] != "") {
+                    $(".priceError").html(response["price"]).addClass('invalid-feedback d-block');
+                    $("#price").addClass('is-invalid');
                   } else {
-                    $(".cenaError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
-                    $("#cena").removeClass('is-invalid');
+                    $(".priceError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
+                    $("#price").removeClass('is-invalid');
                   }
                 
                 
-                  if(response["delka_foceni"] != "") {
-                    $(".delka_foceniError").html(response["delka_foceni"]).addClass('invalid-feedback d-block');
-                    $("#delka_foceni").addClass('is-invalid');
+                  if(response["photography_length"] != "") {
+                    $(".photography_lengthError").html(response["photography_length"]).addClass('invalid-feedback d-block');
+                    $("#photography_length").addClass('is-invalid');
                   } else {
-                    $(".delka_foceniError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
-                    $("#delka_foceni").removeClass('is-invalid');
+                    $(".photography_lengthError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
+                    $("#photography_length").removeClass('is-invalid');
                   }
 
             } else {
@@ -309,19 +309,19 @@
                   $("#ajaxResponseModal").modal("show");
 
 
-                  $(".sluzbaError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
-                  $("#sluzba").removeClass('is-invalid');
+                  $(".serviceError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
+                  $("#service").removeClass('is-invalid');
 
-                  $(".cenaError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
-                  $("#cena").removeClass('is-invalid');
+                  $(".priceError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
+                  $("#price").removeClass('is-invalid');
 
-                  $(".delka_foceniError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
-                  $("#delka_foceni").removeClass('is-invalid');
+                  $(".photography_lengthError").html("").removeClass('invalid-feedback d-block'); //d-block zabarví to na červeno
+                  $("#photography_length").removeClass('is-invalid');
                
                    var id = response["row"]["id"];
-                   $("#row-"+id+" .modelSluzba").html(response["row"]["sluzba"]);
-                   $("#row-"+id+" .modelCena").html(response["row"]["cena"]);
-                   $("#row-"+id+" .modelDelka_foceni").html(response["row"]["delka_foceni"]);
+                   $("#row-"+id+" .modelService").html(response["row"]["service"]);
+                   $("#row-"+id+" .modelPrice").html(response["row"]["price"]);
+                   $("#row-"+id+" .modelPhotography_length").html(response["row"]["photography_length"]);
 
             }
         

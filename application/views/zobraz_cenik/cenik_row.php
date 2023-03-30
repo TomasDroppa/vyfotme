@@ -1,7 +1,7 @@
 <tr> 
     
-    <td class="modelSluzba"><?php echo $row['sluzba']?></td>
-    <td class="modelCena"><?php echo $row['cena']?></td>
-    <td class="modelDelka_foceni"><?php echo $row['delka_foceni']?></td>
+    <td class="modelService"><?php echo $row['service']?></td>
+    <td class="modelPrice"><?php echo $row['price']?></td>
+    <td class="modelPhotography_length"><?php echo $row['photography_length']?></td>
     
 </tr>

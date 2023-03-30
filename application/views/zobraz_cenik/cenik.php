@@ -17,13 +17,13 @@
   
   </head>
   <body>
-    <h1 id="main_title">Ceník</h1>
+
+  <a href="http://localhost/vyfotme/gallery"><h1>Domů</h1></a>
 
     <div class="container">
         <div class="box1">
             <h2>Služby</h2>
-            <!---bootstrap modal-->
-            <!---<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Přidej službu</button>---->
+            
            
         <table class="table table-hover table-bordered table-striped" id="cenikModelList">
             <tbody>

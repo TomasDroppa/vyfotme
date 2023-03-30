@@ -22,7 +22,7 @@
             );
             $data['gallery'] = $this->image->getRows($con);
 
-            $data['title'] = 'Stranka';
+            $data['title'] = 'Hlavní stránka';
         
             // Load the list page view
             $this->load->view('templates/header', $data);

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 body{
     margin:0;
     line-height: 1.5;
@@ -8,7 +8,7 @@ body{
  input,
  textarea,
  button{
-       font-family: 'Raleway', sans-serif;
+       font-family: 'Open Sans', sans-serif;
        font-weight: 400;
    }
  *{
@@ -62,10 +62,10 @@ body{
    bottom:-5px;
    width: 80px;
    height: 3px;
-   background-color: #FF9800; 
+   background-color: #000000; 
  }
  .btn-01{
-   background-color: #FF9800;
+   background-color: #000000;
    color:#ffffff;
    border:2px solid transparent;
    padding:10px 35px;
@@ -80,8 +80,8 @@ body{
  }
  .btn-01:hover{
    background-color: transparent;
-   border-color:#FF9800;
-   color:#FF9800;
+   border-color:#000000;
+   color:#000000;
  }
  .btn-01:focus{
    outline: none;
@@ -108,7 +108,7 @@ body{
  .preloader .loader{
  	height: 30px;
  	width: 30px;
- 	border:2px solid #FF9800;
+ 	border:2px solid #000000;
  	border-right:2px solid transparent;
  	border-radius:50%;
  	animation: ani01 2s linear infinite;
@@ -134,7 +134,7 @@ body{
 	font-size: 30px;
 	color:#ffffff;
 	text-transform: uppercase;
-	font-weight: 900;
+	font-weight: 800;
 	letter-spacing:2px;
 	transition: all 0.5s ease;
  }
@@ -196,7 +196,7 @@ body{
  }
  .header .nav ul li{
 	display: inline-block;
-	margin-left: 30px;
+	margin-left: 28px;
  }
  .header .nav ul li a{
 	text-decoration: none;
@@ -212,12 +212,12 @@ body{
   }
  .header.fixed .nav ul li a:hover, /*navbar se bude posouvat se stránkou*/
  .header .nav ul li a:hover{
-	color:#FF9800;
+	
+	font-size: 20px;
  }
  /* home section */
  .home-section{
     min-height: 100vh;
-   /* background-image: url('../img/home-bg.jpg'); úvodní fotka */
     background-image: url('../img/home.jpg');
 	background-size: cover;
     background-position: center;
@@ -238,20 +238,12 @@ body{
 	opacity: 0.7;
 	z-index: -1;
  }
- /* .home-section .shape-01{
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    border:2px solid #FF9800;
-    right: 5%;
-    top:20%;
-    animation:ani01 5s linear infinite;
- } */
+
  .home-section .row{
 	min-height: 100vh;
  }
  .home-section .home-content{
-	/*background-color: red;*/
+	
 	flex:0 0 100%;
 	max-width: 100%;
 	text-align: center;
@@ -266,7 +258,7 @@ body{
 	margin:0;
 	color:#ffffff;
 	text-transform: uppercase;
-	font-weight: 900;
+	font-weight: 800;
 	letter-spacing: 10px;
  }
 
@@ -308,15 +300,7 @@ body{
  .about-section .about-img .img-box{
 	position: relative;
  }
- /* .about-section .about-img .img-box .shape-02{
-   position: absolute;
-   height: 30px;
-   width: 30px;
-   border:2px solid #FF9800;
-   left:30px;
-   top:30px;
-   animation:ani01 5s linear infinite;
- } */
+
  .about-section .about-img .img-box img{
 	width: 100%;
    display: block;
@@ -332,7 +316,7 @@ body{
  }
 
  .about-section .about-content p{
-	font-size: 16px;
+	font-size: 18px;	/*velikost písma*/
 	color:#555555;
 	line-height: 26px;
 	margin:0;
@@ -414,7 +398,14 @@ body{
    opacity:0;
  }
  
+
+ .service-section .service-item p{
+	font-size: 18px;
+	color: #555555;
+ }
  /* Work Section */
+
+
 
  .work-section{
 	padding:80px 0 0;
@@ -564,137 +555,68 @@ body{
 	padding : 80px 0 80px;	
  }
 
-
-
-
-
-
-
- 
  /* Contact Section */
 
  .contact-section{
 	padding : 80px 0 80px;	
  }
- .contact-section .contact-img{
-	flex:0 0 100%;
-	max-width: 100%;
-	padding:0 15px;
- }
- .contact-section .contact-img .img-box{
-	padding:200px 0;
-	background-image: url('../img/kontakt.jpg');
-	background-size: cover;
-	background-position: center;
- }
- .contact-section .section-title{
-	text-align: center; /*text kontakuj mě dát doprostřed*/
- }
+ 
+ 
+ 
  .contact-section .section-title h1{
-	color:#ffffff;
+	color:#000000;
  }
  .contact-section .section-title h1:before{
-	background-color: #ffffff;
+	background-color: #000000;
 	left: 50%;
 	margin-left: -40px;
  }
- .contact-section .contact-form{
-	flex:0 0 100%;
-	max-width: 100%;
-	padding:0px 65px;
- }
- .contact-section .contact-form .form{
-	background-color: #f3f2f1;
-	padding:55px 40px;
-	margin-top: -150px;
- }
- .contact-section .contact-form .form label{
-	color:#000000;
-	font-weight: 500;
-	display: block;
-	margin: 0 0 5px;
- }
- .contact-section .contact-form .form .input-group{
-	flex:0 0 100%;
-	max-width: 100%;
-	padding:0 15px;
-	margin-bottom: 30px;	/*mezera mezi*/
- }
- .contact-section .contact-form .form .input-group.left,
- .contact-section .contact-form .form .input-group.right{
-	flex:0 0 50%;
-	max-width: 50%;
- }
- .contact-section .contact-form .form .input-control{
-	width: 100%;
-	height: 45px;
-	padding:6px 0px;
-	color:#000000;
-	font-size: 16px;
-	background-color: transparent;
-	border:none;
-	border-bottom: 1px solid #cccccc;
- }
- .contact-section .contact-form .form .input-control:focus{
-	outline: none;
- }
- .contact-section .contact-form .form textarea.input-control{
-	height: 140px;	/*víška textové části*/
-	resize: none;
-	padding-top: 12px;
- }
- .contact-section .contact-form .form .form-btn{
-	text-align: center;
- }
- .contact-section .contact-info{
-	flex:0 0 100%;
-	max-width: 100%;
- }
+ 
+ 
+
  .contact-section .contact-info .info-item{
 	flex:0 0 33.33%;
 	max-width: 33.33%;
 	text-align: center;
 	padding:0 15px;
-	margin-bottom: 40px;
+	margin-bottom: 90px;
+	margin-top: 10;
  }
- .contact-section .contact-info .info-item h5{
-	font-size: 16px;
+ .contact-section .contact-info .info-item h5{	/**/
+	font-size: 20px;
 	font-weight: 600;
-	margin:0;
+	margin-bottom: 0;
  }
- .contact-section .contact-info .info-item p{
-	font-size: 16px;
-	margin:0;
+ .contact-section .contact-info .info-item p{	/**/
+	font-size: 18px;
+	margin-bottom: 0;
 	color:#555555;
  }
+ 
  .contact-section .social-links{
 	flex:0 0 100%;
 	max-width: 100%;
-	padding:0 15px;
-	text-align: center;
+	padding:0 30px;
+	text-align: left;
  }
  .contact-section .social-links a{
 	text-decoration: none;
 	display: inline-block;
-	margin:0 5px;
+	margin:0 15px;	
  }
  .contact-section .social-links a img{
 	width: 28px;
 	display:block;
 	transition: all 0.5s ease;
  }
- .contact-section .social-links a:hover img{
-	opacity:0.5;
- }
+ 
+ .fb-container {
+	text-align: right;
+  }
 
- /* copyright */
- .copyright{
-	border-top:1px solid #c5c5c5;
-	padding:25px 15px;
-	text-align: center;
-	color:#555555;
-	font-size: 16px;
- }
+
+ 
+ 
  /*responsive*/
 
  @media(min-width: 768px){
@@ -785,10 +707,6 @@ body{
 	
  }
 
-
- /*zmenšení fotek a zbytek kódu, něoc smažu*/
-
- 
 a.glink{
 	padding: 5px 10px;
 	border: 1px solid;
@@ -852,13 +770,10 @@ i.plus{
     line-height: 1;
     vertical-align: middle;
 }
-.plus:before {
-    content: url(../images/add.png);
-}
+
 a.btn{
     padding: .1rem .5rem;
 }
 .form-group img{width:180px; padding: 10px;}
 
-/*ceník*/
 
